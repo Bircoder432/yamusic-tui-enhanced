@@ -1,5 +1,5 @@
 
-# yamusic-tui
+# yamusic-tui-enhanced
 
 [![GitHub License](https://img.shields.io/github/license/bircoder432/yamusic-tui-enhanced)](https://github.com/bircoder432/yamusic-tui-enhaced/blob/main/LICENSE)
 [![Go Report Card](https://goreportcard.com/badge/github.com/bircoder432/yamusic-tui-enhanced)](https://goreportcard.com/report/github.com/bircoder432/yamusic-tui-enhanced)
@@ -113,7 +113,7 @@ Increase the `buffer-size-ms` if you have glitches or stutters.
 
 ![win11-smtc-example](.assets/smtc-win11.png)
 
-Yamusic-tui supports the system media control interfaces: `MPRIS` on Linux and `SMTC` on Windows (there is currently no implementation for MacOS). 
+Yamusic-tui supports the system media control interfaces: `MPRIS` on Linux and `SMTC` on Windows (there is currently no implementation for MacOS).
 
 This feature is enabled by default, however for compatibility reasons you can disable it by building the app with the `nomedia` tag or downloading a release with the `-nomedia` suffix.
 

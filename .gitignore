@@ -2,4 +2,6 @@
 *.exe
 yamusic
 yamusic-tui
+yamusic
+yamusic-tui-e
 .idea/
