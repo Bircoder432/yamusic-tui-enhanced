@@ -18,6 +18,7 @@ const (
 	CURSOR_UP Control = iota
 	CURSOR_DOWN
 	RENAME
+	TOGGLE_VIEW
 )
 
 type PlaylistType = uint64
@@ -44,6 +45,7 @@ type Model struct {
 	program       *tea.Program
 	list          list.Model
 	help          help.Model
+	showPlaylists bool
 	width, height int
 }
 
@@ -121,6 +123,8 @@ func (m *Model) Update(message tea.Msg) (*Model, tea.Cmd) {
 			cmds = append(cmds, model.Cmd(CURSOR_DOWN))
 		case controls.PlaylistsRename.Contains(keypress):
 			cmds = append(cmds, model.Cmd(RENAME))
+		case controls.PlaylistsHide.Contains(keypress):
+			cmds = append(cmds, model.Cmd(TOGGLE_VIEW))
 		}
 	}
 
