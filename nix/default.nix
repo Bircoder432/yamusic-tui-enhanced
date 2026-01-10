@@ -22,6 +22,6 @@ pkgs.buildGoModule {
 
   installPhase = ''
     mkdir -p $out/bin
-    cp bin/yamusic-tui-result $out/bin/yamusic
+    cp bin/yamusic-tui-enhanced $out/bin/yamusic
   '';
 }
