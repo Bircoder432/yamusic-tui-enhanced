@@ -19,4 +19,9 @@ pkgs.buildGoModule {
     pkgs.pipewire
     pkgs.libpulseaudio
   ];
+
+  installPhase = ''
+    mkdir -p $out/bin
+    cp yamusic-tui $out/bin/
+  '';
 }
