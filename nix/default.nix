@@ -10,9 +10,6 @@ pkgs.buildGoModule {
 
   vendorHash = "sha256-x1dYqdsJtcankWjoq94CbBDx5iaroN+2aN/QoByq2t0=";
 
-  # CGO нужен для alsa/oto
-  CGO_ENABLED = 1;
-
   nativeBuildInputs = [
     pkgs.pkg-config
   ];
