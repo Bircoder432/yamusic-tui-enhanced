@@ -1,4 +1,6 @@
 
+# All features from this fork have been added to the original project, please use it
+[yamusic-tui](https://github.com/dece2183/yamusic-tui)
 # yamusic-tui-enhanced
 
 [![GitHub License](https://img.shields.io/github/license/bircoder432/yamusic-tui-enhanced)](https://github.com/bircoder432/yamusic-tui-enhaced/blob/main/LICENSE)
